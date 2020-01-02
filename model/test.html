@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input"><br>
+    <div><button onclick="input()">ip입력</button></div>
+    <video src = "https://"+ ip +   ></video>
+
+    <script type="text/javascript">
+        var ip;
+        
+        function input(){
+        var input = document.getElementById("input").value;
+        ip = input + ":81/stream"; 
+        }
+        
+        function output(){
+        document.getElementById("output").value = ip;
+        }
+    </script>
+</body>
+</html>

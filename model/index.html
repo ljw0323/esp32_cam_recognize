@@ -41,6 +41,7 @@
         await webcam.setup(); // request access to the webcam
         await webcam.play();
         window.requestAnimationFrame(loop);
+        
 
         // append elements to the DOM
         document.getElementById("webcam-container").appendChild(webcam.canvas);
